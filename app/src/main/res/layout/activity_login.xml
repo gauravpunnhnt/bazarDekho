@@ -107,9 +107,8 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
-            android:text="Log In"
             android:textColor="@color/colorAccent"
-            android:background="@drawable/button_rounded_corners"
+            android:background="@drawable/login_btn_rounded_corners"
             android:padding="15dp"/>
 
     </LinearLayout>

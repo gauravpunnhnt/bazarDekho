@@ -14,4 +14,6 @@
             <corners android:radius="20dp" />
         </shape>
     </item>
+    <item android:drawable="@drawable/ic_signup"
+        android:gravity="center_horizontal|center_vertical"/>
 </layer-list>
