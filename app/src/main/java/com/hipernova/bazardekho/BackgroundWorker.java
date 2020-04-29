@@ -18,7 +18,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-import static com.google.android.material.snackbar.BaseTransientBottomBar.*;
 
 public class BackgroundWorker extends AsyncTask<String,Void,String> {
 

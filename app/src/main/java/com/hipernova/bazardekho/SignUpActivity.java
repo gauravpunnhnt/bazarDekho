@@ -73,6 +73,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         onDateSetListener = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                month = month + 1;
                 String date = year + "-" + month + "-" + dayOfMonth;
                 dobup.setText(date);
             }
@@ -140,5 +141,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         String type = "register";
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type,name,email,pass,dob);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent logIn = new Intent(SignUpActivity.this,LoginActivity.class);
+        startActivity(logIn);
     }
 }

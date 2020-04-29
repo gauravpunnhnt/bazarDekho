@@ -68,9 +68,16 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_in_layout"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp">
+            android:layout_marginTop="70dp"
+            app:hintTextColor="@color/colorAccent"
+            app:boxStrokeColor="@color/colorAccent"
+            app:shapeAppearance="@style/Rounded"
+            android:background="@color/colorPrimary"
+            app:helperTextTextColor="@color/helperTextColor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email_in"
@@ -85,10 +92,17 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pass_in_layout"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            app:hintTextColor="@color/colorAccent"
+            app:boxStrokeColor="@color/colorAccent"
+            app:shapeAppearance="@style/Rounded"
+            android:background="@color/colorPrimary"
+            app:helperTextTextColor="@color/helperTextColor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/pass_in"
@@ -104,12 +118,17 @@
 
         <Button
             android:id="@+id/log_in_btn"
-            android:layout_width="200dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:textColor="@color/colorAccent"
-            android:background="@drawable/login_btn_rounded_corners"
-            android:padding="15dp"/>
+            android:padding="15dp"
+            app:icon="@drawable/ic_login"
+            app:iconGravity="textStart"
+            android:gravity="center"
+            app:shapeAppearance="@style/Rounded"
+            android:background="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.Button.Icon"/>
 
     </LinearLayout>
 
